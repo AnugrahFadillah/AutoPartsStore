@@ -1,0 +1,89 @@
+### ====================================
+### 🛠️ SPAREPARTS ROUTES
+### ====================================
+
+### GET all spareparts
+GET http://localhost:3000/api/spareparts
+Accept: application/json
+
+###
+
+### GET sparepart by ID
+GET http://localhost:3000/api/spareparts/1
+Accept: application/json
+
+###
+
+### CREATE new sparepart
+POST http://localhost:3000/api/spareparts
+Content-Type: application/json
+
+{
+  "name": "Mounting engine",
+  "brand": "AHM",
+  "price": 350000,
+  "stock": 23,
+  "description": "Mounting engine vario 160",
+  "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJUzps0hbZ47MGWdELE4NzssPgISW_Je10iw&s"
+}
+
+###
+
+### UPDATE sparepart by ID
+PUT http://localhost:3000/api/spareparts/1
+Content-Type: application/json
+
+{
+  "price": 50000,
+  "stock": 25
+}
+
+###
+
+### DELETE sparepart by ID
+DELETE http://localhost:3000/api/spareparts/1
+
+###
+
+### ====================================
+### 🏪 BENGKELS ROUTES
+### ====================================
+
+### GET all bengkels
+GET http://localhost:3000/api/bengkels
+Accept: application/json
+
+###
+
+### GET bengkel by ID
+GET http://localhost:3000/api/bengkels/1
+Accept: application/json
+
+###
+
+### CREATE new bengkel
+POST http://localhost:3000/api/bengkels
+Content-Type: application/json
+
+{
+  "name": "Bengkel Sumber Rejeki",
+  "address": "Jl. Siliwangi No.10",
+  "latitude": -6.2341,
+  "longitude": 106.9899
+}
+
+###
+
+### UPDATE bengkel by ID
+PUT http://localhost:3000/api/bengkels/1
+Content-Type: application/json
+
+{
+  "address": "Jl. Siliwangi No.15",
+  "latitude": -6.2342
+}
+
+###
+
+### DELETE bengkel by ID
+DELETE http://localhost:3000/api/bengkels/1
