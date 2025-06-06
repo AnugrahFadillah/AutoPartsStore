@@ -21,7 +21,7 @@ steps:
       - us-central1
       - --allow-unauthenticated
       - --set-env-vars
-      - DB_HOST=${_DB_HOST},DB_NAME=${_DB_NAME},DB_PASSWORD=${_DB_PASSWORD},DB_USERNAME=${_DB_USERNAME}
+      - DB_HOST=${_DB_HOST},DB_NAME=${_DB_NAME},DB_PASSWORD=${_DB_PASSWORD},DB_USER=${_DB_USER}
 
 options:
   logging: CLOUD_LOGGING_ONLY
